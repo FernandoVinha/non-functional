@@ -1,0 +1,32 @@
+
+.transactions-container {
+    width: 60%;
+    float: left;
+}
+.receive {
+    color: green;
+}
+
+.payment {
+    color: red;
+}
+
+.fee {
+    color: blue;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;  /* você pode ajustar este valor */
+    cursor: pointer;
+}
+
+td {
+    padding: 0 10px;  /* você pode ajustar este valor */
+}
+
+th {
+    padding: 0 10px;  /* você pode ajustar este valor */
+}

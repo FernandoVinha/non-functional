@@ -1,0 +1,68 @@
+html, body {
+  height: 100%; /* Define a altura do corpo e do html como 100% da janela de visualização */
+  display: flex; /* Define a exibição como flexível para permitir o alinhamento e distribuição dos elementos filhos */
+  justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+  align-items: center; /* Centraliza os elementos filhos verticalmente */
+  padding: 0; /* Remove qualquer padding do corpo e do html */
+  margin: 0; /* Remove qualquer margem do corpo e do html */
+  }
+  
+  .center-screen {
+  display: flex; /* Define a exibição como flexível */
+  justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+  align-items: center; /* Centraliza os elementos filhos verticalmente */
+  height: 100%; /* Define a altura como 100% da janela de visualização */
+  }
+  
+  .form-signin {
+  width: 100%; /* Define a largura do formulário como 100% do seu contêiner /
+  max-width: 330px; /* Define a largura máxima do formulário como 330px /
+  padding: 15px; /* Adiciona um padding de 15px ao redor do formulário */
+  }
+  
+  .form-signin .checkbox {
+  font-weight: 400; /* Define o peso da fonte do checkbox dentro do formulário como 400 */
+  }
+  
+  .form-signin .form-floating:focus-within {
+  z-index: 2; /* Quando qualquer elemento filho de .form-floating está em foco, .form-floating move-se para frente no eixo z */
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: 0; /* Define a margem inferior como 0 para remover o espaço entre os campos */
+    border-top-left-radius: 10; /* Remove o raio do canto superior esquerdo */
+    border-top-right-radius: 10; /* Remove o raio do canto superior direito */
+    border-bottom-right-radius: 10; /* Remove o raio do canto inferior direito */
+    border-bottom-left-radius: 10; /* Remove o raio do canto inferior esquerdo */
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 0; /* Define a margem inferior como 0 para remover o espaço entre os campos */
+    border-top-left-radius: 10; /* Remove o raio do canto superior esquerdo */
+    border-top-right-radius: 10; /* Remove o raio do canto superior direito */
+    border-bottom-right-radius: 10; /* Remove o raio do canto inferior direito */
+    border-bottom-left-radius: 10; /* Remove o raio do canto inferior esquerdo */
+  }
+  
+  .form-signin input[type="password_confirm"] {
+    margin-bottom: 0; /* Mantém a margem inferior como 10px para o último campo */
+    border-top-left-radius: 10; /* Remove o raio do canto superior esquerdo */
+    border-top-right-radius: 10; /* Remove o raio do canto superior direito */
+    border-bottom-right-radius: 10; /* Remove o raio do canto inferior direito */
+    border-bottom-left-radius: 10; /* Remove o raio do canto inferior esquerdo */
+  }
+  .bd-placeholder-img {
+  font-size: 1.125rem; /* Define o tamanho da fonte para a imagem de espaço reservado */
+  text-anchor: middle; /* Centraliza o texto na imagem de espaço reservado */
+  -webkit-user-select: none; /* Evita que o usuário selecione o texto na imagem de espaço reservado no navegador baseado em Webkit (por exemplo, Safari, Chrome) */
+  -moz-user-select: none; /* Evita que o usuário selecione o texto na imagem de espaço reservado no navegador baseado em Mozilla (Firefox) */
+  user-select: none; /* Evita que o usuário selecione o texto na imagem de espaço reservado no navegador */
+  }
+  
+  @media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+  font-size: 3.5rem; /* Define o tamanho da fonte para a imagem de espaço reservado quando a largura da janela do navegador é de no mínimo 768px */
+  }
+  }
+
+

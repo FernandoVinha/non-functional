@@ -1,0 +1,67 @@
+/* Estilos para o switch de modo claro/escuro */
+.label {
+    background-image: url('/static/img/light.png'); /* Imagem padrão para o modo dark */
+    background-size: cover;
+    background-position: right center; /* Iniciando com a imagem noite à vista */
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 35px; /* Ajustado para acomodar o círculo maior */
+    width: 100px; /* Ajustado para acomodar o círculo maior e o movimento das imagens */
+    margin: 0 auto;
+    transition: background-position 0.5s linear; /* Transição para o movimento da imagem de fundo */
+  }
+  
+  .checkbox:checked + .label {
+    background-image: url('/static/img/dark.png'); /* Imagem para o modo lite */
+    background-position: left center; /* Movendo para mostrar a imagem dia */
+  }
+  
+  .label .ball {
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 68px; /* A posição inicial foi ajustada */
+    height: 35px; /* Aumentado o tamanho do círculo */
+    width: 35px; /* Aumentado o tamanho do círculo */
+    transform: translateX(-1px);
+    transition: transform 0.5s linear;
+    z-index: 2; 
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(-67px); /* Ajustado para a nova posição final */
+  }
+  
+  .fa-moon, .fa-sun {
+    z-index: 0;
+    position: relative;
+    top: -2px; /* Pequeno ajuste para alinhar os ícones verticalmente */
+  }
+  
+  .fa-moon {
+    color: #ebcf61;
+    left: 5px; /* Move a lua um pouco para a direita */
+    position: relative;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+    right: 2px; /* Move a lua um pouco para a direita */
+  }
+  
+  /* Estilos básicos para o modo escuro */
+  body.dark {
+    background-color: #292c35;
+    height: 100vh;
+  }
+  /* Escondendo o checkbox */
+.checkbox {
+    display: none;
+  }

@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  background-color: #f5f5f5; /* Esta é uma cor cinza claro como exemplo */
+  transition: background-color 0.3s ease; /* Transição suave ao mudar os temas */
+}
+
+body.dark {
+  background-color: #333; /* Esta é uma cor cinza escuro como exemplo */
+  transition: background-color 0.3s ease; /* Transição suave ao mudar os temas */
+}
+
+a {
+  color: #575757; /* ou qualquer cor que você deseje para o tema escuro */
+  font-size: 2rem;
+}
+.dark a {
+  color: #fff2cd; /* ou qualquer cor que você deseje para o tema escuro */
+}
+
